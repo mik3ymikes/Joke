@@ -1,0 +1,69 @@
+body{
+    background-color: yellow;
+}
+
+header{
+    background-color: gray;
+    text-align: center;
+}
+
+footer{
+    background-color: white;
+    text-align: center;
+}
+
+
+.flexy{
+    display: flex;
+    
+}
+
+
+.services{
+width: 25%;
+background-color: green;
+min-height: 100vh;
+/* opacity: 40%; */
+color: black;
+
+}
+
+
+.testimonials{
+width: 25%;
+background-color: aqua;
+min-height: 100vh;
+/* opacity: 40%; */
+color: black;
+}
+
+
+.main-content{
+    background-color: purple;
+    width: 50%;
+    min-height: 100vh;
+    /* opacity: 40%; */
+    color: black;
+}
+
+
+@media(max-width:768px){
+   .flexy{
+    display: block;
+    width: 100%;
+    margin: 0, auto;
+   }
+    .services,.testimonials,.main-content{
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        flex-wrap:wrap
+
+    }
+
+    .services{
+        width: 30%;
+    }
+    /* justify-content: center;
+    align-items: center; */
+   }
